@@ -1,0 +1,71 @@
+# The repository is allowlisted: only the control plane and empty workspace
+# skeleton are versioned. Operational data remains local by default.
+/*
+
+# Root control files.
+!/.gitignore
+!/.gitattributes
+!/AGENTS.md
+
+# Versioned workflow system.
+!/_System/
+!/_System/**
+
+# Empty workspace skeleton. Contents stay local; only .gitkeep is versioned.
+!/00-Inbox/
+/00-Inbox/*
+!/00-Inbox/.gitkeep
+
+!/10-Sources/
+!/10-Sources/assets/
+/10-Sources/assets/*
+!/10-Sources/assets/.gitkeep
+!/10-Sources/notes/
+/10-Sources/notes/*
+!/10-Sources/notes/.gitkeep
+
+!/20-Knowledge/
+!/20-Knowledge/objects/
+/20-Knowledge/objects/*
+!/20-Knowledge/objects/.gitkeep
+!/20-Knowledge/topics/
+/20-Knowledge/topics/*
+!/20-Knowledge/topics/.gitkeep
+
+!/30-Work/
+!/30-Work/change-proposals/
+/30-Work/change-proposals/*
+!/30-Work/change-proposals/.gitkeep
+!/30-Work/context-packs/
+/30-Work/context-packs/*
+!/30-Work/context-packs/.gitkeep
+!/30-Work/tasks/
+/30-Work/tasks/*
+!/30-Work/tasks/.gitkeep
+
+!/40-Outputs/
+!/40-Outputs/drafts/
+/40-Outputs/drafts/*
+!/40-Outputs/drafts/.gitkeep
+!/40-Outputs/reviewed/
+/40-Outputs/reviewed/*
+!/40-Outputs/reviewed/.gitkeep
+!/40-Outputs/final/
+/40-Outputs/final/*
+!/40-Outputs/final/.gitkeep
+
+!/90-Archive/
+!/90-Archive/outputs/
+/90-Archive/outputs/*
+!/90-Archive/outputs/.gitkeep
+
+# Local and generated noise inside versioned system paths.
+~$*
+*.tmp
+*.lock
+*.swp
+*.bak
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db

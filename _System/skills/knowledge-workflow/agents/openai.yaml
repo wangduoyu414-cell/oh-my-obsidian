@@ -1,0 +1,4 @@
+interface:
+  display_name: "Knowledge Workflow"
+  short_description: "将任意来源转化为可追溯知识并按任务生成受控产物的通用工作流"
+  default_prompt: "使用 $knowledge-workflow 将当前来源材料整理为可追溯知识，并生成受控的任务产物。"
